@@ -1,0 +1,17 @@
+@import "_minix.scss";
+@import "common.scss";
+
+.box{
+    @include box_flex;
+    width: 100%;
+    height: 100%;
+    background:skyblue;
+    font-size:pxTorem(5px);
+
+    header{
+        @include box_flex;
+        width: 100%;
+        height: pxTorem(20px);
+        @include justify(space-around)
+    }
+}
